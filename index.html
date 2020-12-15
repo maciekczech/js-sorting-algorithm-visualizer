@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-containers" id="generate-button-container">
+        <input type="button" 
+        id="generate-array-button" 
+        value="Generate New Array" 
+        class="nav-button"/>
+      </div>
+      <div class="nav-containers" id="length-button-container">
+        <label for="array-length-slider" class="nav-label">Change number of elements</label>
+        <div class="range-slider">
+
+          <span class="array-length-range-label">5</span>
+
+          <input type="range" id="array-length-slider" class="nav-button" name="Change number of elements" min="5" max="120">
+
+          <span class="array-length-range-label">120</span>
+
+        </div>
+      </div>
+      <div class="nav-containers" id="speed-button-container">
+        <label for="sorting-speed-label" class="nav-label-always-on">Speed of Execution</label>
+        <div class="speed-buttons">
+
+          <input type="button" id="backward-button" class="nav-button-almost-always-on" value="&#171;">
+          <span id="speed-value">1.00x</span>
+          <input type="button" id="forward-button" class="nav-button-almost-always-on" value="&#187;">
+
+        </div>
+      </div>
+      <div class="nav-containers" id="sort-algorithms-container">
+        <ul>
+          <li class="algorithm-button-container">
+            <input type="button" 
+            id="bubble-sort-button"
+            value="Bubble Sort" 
+            class="algorithm-button nav-button" />
+          </li>
+          <li class="algorithm-button-container">
+            <input type="button" 
+            id="merge-sort-button" 
+            value="Merge Sort" 
+            class="algorithm-button nav-button" />
+          </li>
+          <li class="algorithm-button-container">
+            <input type="button" 
+            id="quick-sort-button" 
+            value="Quick Sort Lomuto" 
+            class="algorithm-button nav-button" />
+          </li>
+          <li class="algorithm-button-container">
+            <input type="button" 
+            id="hoare-quick-sort-button" 
+            value="Quick Sort Hoare" 
+            class="algorithm-button nav-button" />
+          </li>
+          <li class="algorithm-button-container">
+            <input type="button"  
+            id="insertion-sort-button"
+            value="Insertion Sort" 
+            class="algorithm-button nav-button" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="array-container" class="array-container">
+    </div>
+    <footer id='legend-container'>
+    </footer>
+  </body>
+</html>
